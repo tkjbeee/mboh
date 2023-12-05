@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="wangi.css" />
+	<title>by Alifian</title>
+</head>
+<body>
+	<div class="container">
+		<span class="text first-text">I</span>
+		<span class="text second-text">Like You</span>
+	</div>
+
+	<script>
+		const text = document.querySelector(".second-text");
+
+		const textLoad = () => {
+			setTimeout( () => {
+				text.textContent = "Like You";
+			},0);
+			setTimeout( () => {
+				text.textContent = "Miss You";
+			},4000);
+			setTimeout( () => {
+				text.textContent = "Love You Afidddd💕";
+			},8000);
+		};
+
+		textLoad();
+		setInterval(textLoad, 12000);
+	</script>
+
+</body>
+</html>
